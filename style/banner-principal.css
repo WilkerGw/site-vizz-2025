@@ -1,0 +1,122 @@
+.banner__principal{
+    background-color: var(--cinza);
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: auto;
+}
+
+.banner__logo{
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.banner__logo--img {
+    width: 15rem;
+}
+
+.redes__container{
+    justify-content: center;
+    gap: 3rem;
+}
+
+.redes__icone{
+    width: 2rem;
+    cursor: pointer;
+    transition: all .5s;
+    border-radius: 50%;
+}
+
+.redes__icone:hover{
+    transform: scale(1.1);
+
+}
+
+.banner__endereco {
+    height: auto;
+}
+
+.endereco__container {
+    background-color: transparent;
+    text-align: center;
+}
+
+
+.endereco__texto {
+    font-size: 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #ffdd56;
+    width: 0;
+    animation: typing 4s ease-out infinite, blink 0.6s step-end infinite;
+    padding-inline: 1rem;
+    color: var(--amarelo);
+    width: 100%;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+
+
+.chamada__container {
+    text-align: center;
+    hyphens: auto;
+    color: #eeeeee;
+    margin-top: 2rem;
+}
+
+.chamada__container h1 {
+    font-size: 1rem;
+    margin-block: .3rem;
+}
+
+.span__chamada{
+    color: var(--amarelo);
+}
+
+.chamada__btn{
+    padding: 1rem;
+    width: 100%;
+    background-color: var(--amarelo);
+    color: var(--cinza);
+    margin-block: .5rem;
+    letter-spacing: .1rem;
+    font-size: 1rem;
+    bottom: 0px;
+    left: 0px;
+    border-radius: .5rem;
+}
+
+.fale__conosco--btn {
+    background-color: #3eba54;
+    color: #eeeeee;
+}
+
+@media (min-width:600px){
+
+    .banner__principal {
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .chamada__btn{
+        width: 20rem;
+        height: auto;
+        font-size: .8rem;
+        transition: all .5s;
+        border-radius: .3rem;
+    }
+
+    .chamada__btn:hover{
+        opacity: 100%;
+    }
+}

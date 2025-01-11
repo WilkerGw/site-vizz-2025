@@ -1,0 +1,24 @@
+.politicas__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-block: 2rem;
+}
+
+.politicas__container img{
+    width: 10rem;
+}
+
+.politicas__container > section {
+    max-width: 900px;
+    text-align: center;
+    height: auto;
+    margin-block: 5rem;
+    line-height: 2rem;
+    letter-spacing: .0150rem;
+}
+
+.privacidade__container, .troca__container, .reembolso__container{
+    flex-direction: column;
+}

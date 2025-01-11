@@ -1,0 +1,76 @@
+:root{
+    --cinza: #737d7f;
+    --amarelo: #ffdd56;
+}
+
+header,
+.menu,
+main,
+footer,
+section,
+.lista,
+.redes__container,
+.banner__logo,
+.promo__container, .promo__preco,
+.contact,
+.contact-content {
+    display: flex;
+}
+
+
+main{
+    margin-top: 2.5rem;
+    width: 100%;
+    max-width: 1366px;
+    flex-direction: column;
+    background-color: var(--cinza);
+    align-self: center;
+}
+
+header, section, main, .menu, footer {
+    width: 100%;
+} 
+
+header{
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+section {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding: .5rem;
+    margin-block: .2rem;
+    background-color: #eeeeee;
+    border-radius: 1rem;
+    padding-block: 2rem;
+}
+
+p, h1 {
+    color: var(--cinza);
+}
+
+h1 {
+    font-weight: bold;
+}
+
+@media (min-width:600px){
+
+    header{
+        border-bottom-left-radius: 0rem;
+        border-bottom-right-radius: 0rem;
+    }
+
+    section {
+        height: 100vh;
+    }
+
+
+}
+
+
+

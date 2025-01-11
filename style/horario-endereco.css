@@ -1,0 +1,63 @@
+.horario__endereco{
+    flex-direction: column;
+    align-items: center;
+}
+
+.horario__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.horario__container p { 
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.horario__container h1, .span__horario{
+    font-weight: bold;
+    color: var(--amarelo);
+}
+
+.endereco__container > h1 {
+    font-size: 1.8rem;
+}
+
+.horario__container {
+    background-color: var(--cinza);
+    width: 100vw;
+    padding-block: .5rem;
+}
+
+.horario__container > h1 {
+    text-align: center;
+    width: 100%;
+    font-size: 1.4rem;
+    color: #eeeeee;
+}
+
+.horario__container p {
+    color : #eeeeee;
+}
+
+.chamada__container p, .chamada__container h1 {
+    color: #eeeeee;
+}
+
+iframe {
+    width: 100vw;
+}
+
+@media (min-width:600px) {
+
+    .horario__endereco {
+        height: auto;
+    }
+
+    .horario__container {
+        padding-inline: 40rem;
+    }
+}
+

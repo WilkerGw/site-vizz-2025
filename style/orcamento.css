@@ -1,0 +1,105 @@
+.orcamento{
+    flex-direction: column;
+    color: var(--cinza);
+    text-align: center;
+    justify-content: center;
+    height: auto;
+}
+
+.orcamento h1 {
+    font-size: 1.8rem;
+}
+
+.orcamento > p {
+    margin-block: 1rem;
+}
+
+#preview {
+    margin-top: 1rem;
+}
+
+#status {
+    color: red;
+}
+
+.form__container > form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;  
+}
+
+.receita__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 1rem;
+}
+
+.input__data {
+    width: 60%;
+    box-shadow: 0px 0px 5px var(--cinza);
+    padding-inline: 1rem;
+}
+
+form label {
+    margin-top: 2rem;
+}
+
+.orcamento button {
+    background-color: var(--amarelo);
+    box-shadow: 0px 0px 5px var(--cinza);
+    padding-inline: 1rem;
+    border-radius: .5rem;
+    width: 100%;
+    height: 3rem;
+    margin-top: 2rem;
+}
+
+@media (min-width:600px) {
+
+    .orcamento{
+        flex-direction: column;
+        color: var(--cinza);
+        text-align: center;
+        justify-content: center;
+        height: auto;
+    }
+
+    .form__container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 45%;
+    }
+
+    .receita__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 45%;
+    }
+
+    .form__receita--container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .form__container > form{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;  
+    }
+
+    .orcamento button {
+        width: 20%;
+        align-self: center;
+    }
+
+}
+

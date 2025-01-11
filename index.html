@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vizz</title>
+    <!--Styles-->
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/banner-principal.css">
+    <link rel="stylesheet" href="style/promo.css">
+    <link rel="stylesheet" href="style/destaque.css">
+    <link rel="stylesheet" href="style/design.css">
+    <link rel="stylesheet" href="style/horario-endereco.css">
+    <link rel="stylesheet" href="style/quem-somos.css">
+    <link rel="stylesheet" href="style/contato.css">
+    <link rel="stylesheet" href="styles/infos-estilos.css">
+    <link rel="stylesheet" href="style/orcamento.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <!--Scripts-->
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/promo-img.js" defer></script>
+    <script src="scripts/quem-somos.js" defer></script>
+    <script src="scripts/scroll-display.js" defer></script>
+    <script src="scripts/carousel-destaque.js" defer></script>
+    <script src="scripts/orcamento.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <img src="images/logos/LOGO-OFICIAL-DOURADA.png" alt="Logo" class="header__logo" />
+        <!-- Botão Hamburguer -->
+        <button id="menu-toggle" class="menu-toggle"><p>Menu</p>☵</button>
+        <!-- Menu deslizante -->
+        <nav id="menu" class="menu">
+            <button id="close-menu" class="close-menu">✖</button>
+            <ul class="lista">
+                <li class="item"><a href="#inicio">Início</a></li>
+                <li class="item"><a href="#produtos__carousel-destaque">Destaques</a></li>
+                <li class="item"><a href="#design">Designe</a></li>
+                <li class="item"><a href="#horario__endereco">Endereço</a></li>
+                <li class="item"><a href="#contact">Contato</a></li>
+                <li class="item item__dropdown">
+                    <a href="https://oticasvizz.lojavirtualnuvem.com.br/oculos-de-sol/" target="_blank">Óculos Solar</a>
+                    <ul class="submenu">
+                        <li class="submenu__item"><a href="https://oticasvizz.lojavirtualnuvem.com.br/oculos-de-sol/" target="_blank">Todos</a></li>
+                        <li class="submenu__item"><a href="https://oticasvizz.lojavirtualnuvem.com.br/oculos-de-sol/quadrados/" target="_blank">Quadrados</a></li>
+                        <li class="submenu__item"><a href="https://oticasvizz.lojavirtualnuvem.com.br/oculos-de-sol/arredondados/" target="_blank">Redondos</a></li>
+                        <li class="submenu__item"><a href="https://oticasvizz.lojavirtualnuvem.com.br/oculos-de-sol/gatinho/" target="_blank">Gatinho</a></li>
+                    </ul>
+                </li>
+                <li class="item item__dropdown">
+                    <a href="https://oticasvizz.lojavirtualnuvem.com.br/armacoes/?mpage=3" target="_blank">Armações</a>
+                    <ul class="submenu">
+                        <li class="submenu__item"><a href="https://oticasvizz.lojavirtualnuvem.com.br/armacoes/?mpage=3" target="_blank">Todos</a></li>
+                        <li class="submenu__item"><a href="https://oticasvizz.lojavirtualnuvem.com.br/armacoes/armacoes-quadradas/" target="_blank">Quadrados</a></li>
+                        <li class="submenu__item"><a href="https://oticasvizz.lojavirtualnuvem.com.br/armacoes/armacoes-arredondadas/" target="_blank">Redondos</a></li>
+                        <li class="submenu__item"><a href="https://oticasvizz.lojavirtualnuvem.com.br/armacoes/armacoes-gatinho/" target="_blank">Gatinho</a></li>
+                    </ul>
+                </li>
+                <li class="item item__dropdown">
+                    <a href="infos-legais.html">Informações Legais</a>
+                    <ul class="submenu">
+                        <li class="submenu__item"><a href="infos-legais.html#privacidade">Política de Privacidade</a></li>
+                        <li class="submenu__item"><a href="infos-legais.html#reembolso">Política de Reembolso</a></li>
+                        <li class="submenu__item"><a href="infos-legais.html#troca">Trocas e Devoluções</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav> 
+    </header>
+    <main>
+        <section id="inicio" class="banner__principal">
+            <div class="banner__logo">
+                <img src="images/logos/LOGO-OFICIAL-DOURADA.png" alt="logo dourada" class="banner__logo--img">
+                <div class="redes__container">
+                    <a href="https://www.instagram.com/oticasvizz/" target="_blank"><img src="images/icones/instagram.png" alt="logo instagram" class="redes__icone"></a>
+                    <a href="https://wa.me/551123628799" target="_blank"><img src="images/icones/whatsapp.png" alt="logo whatsapp" class="redes__icone"></a>
+                    <a href="https://www.facebook.com/profile.php?id=61565492837095&locale=pt_B" target="_blank"><img src="images/icones/facebook.png" alt= "logo facebook" class="redes__icone"></a>
+                </div>
+                <div class="banner__endereco">
+                    <p class="endereco__texto " id="address">
+                        Av do Oratório, 4869, Vila Industrial, São Paulo - SP
+                    </p>
+                </div>
+            </div>
+            <div class="chamada__container">
+                <h1>Qualidade que você vê, <span class="span__chamada">preços que você não sente!</span> </h1>
+                <p>Envie sua receita! <span class="span__chamada">Faça um orçamento!</span></p>
+                <button class="chamada__btn"><a href="#orcamento">FAÇA UM ORÇAMENTO</a></button>
+                <button class="chamada__btn fale__conosco--btn"><a href="https://wa.me/551123628799" target="_blank">FALE CONOSCO</a></button>
+                <h1>O melhor <span class="span__chamada">preço e qualidade</span> da região!</h1>
+            </div>
+        </section>
+        <section id="promo" class="promo__container">
+            <h1>Promoções Vigentes</h1>
+            <p>Confira nossas <span class="promo__span">promoções vigentes</span> e economize mais do que você pode imaginar</p>
+            <div class="promo__img--container">
+              <div class="promo">
+                <img src="images/banners/promos/1.png" alt="">
+                <button><a href="https://wa.me/551123628799" target="_blank">Saiba Mais</a></button>
+              </div>
+              <div class="promo">
+                <img src="images/banners/promos/2.png" alt="">
+                <button><a href="https://wa.me/551123628799" target="_blank">Saiba Mais</a></button>
+              </div>
+              <div class="promo">
+                <img src="images/banners/promos/3.png" alt="">
+                <button><a href="https://wa.me/551123628799" target="_blank">Saiba Mais</a></button>
+              </div>
+              <div class="promo">
+                <img src="images/banners/promos/4.png" alt="">
+                <button><a href="https://wa.me/551123628799" target="_blank">Saiba Mais</a></button>
+              </div>
+            </div>
+        </section>
+        <section class="carousel__produtos__destaque" id="produtos__carousel-destaque">
+            <article class="carousel-section">
+                <button class="carousel-button left" onclick="scrollCarousel(1, -300)">&#10094;</button>
+                <button class="carousel-button right" onclick="scrollCarousel(1, 300)">&#10095;</button>
+                <div class="carousel-container" id="carousel1">
+                  <div class="carousel-item">
+                    <a href="https://oticasvizz.lojavirtualnuvem.com.br/produtos/vizz-havana-animal-print/" target="_blank"><img src="images/destaque/SOL/Havana/01.png" alt="Image 2"></a>
+                    <h1>Óculos de Sol com proteção <span>UV400</span> Vizz Havana</h1>
+                    <p class="preco__antigo">R$ 129,99</p>
+                    <p class="preco__promo">R$ 99,99</p>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="https://oticasvizz.lojavirtualnuvem.com.br/produtos/vizz-acacia-animal-print/" target="_blank"><img src="images/destaque/SOL/Acácia/01.png" alt="Image 1"></a>
+                    <h1>Óculos de Sol com proteção <span>UV400</span> Vizz Acácia</h1>
+                    <p class="preco__antigo">R$ 129,99</p>
+                    <p class="preco__promo">R$ 99,99</p>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="https://oticasvizz.lojavirtualnuvem.com.br/produtos/oculos-de-sol-com-protecao-uv400-vizz-rio-animal-print/" target="_blank"><img src="images/destaque/SOL/Rio/01.jpg" alt="Image 2"></a>
+                    <h1>Óculos de Sol com proteção <span>UV400</span> Vizz Rio</h1>
+                    <p class="preco__antigo">R$ 129,99</p>
+                    <p class="preco__promo">R$ 99,99</p>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="https://oticasvizz.lojavirtualnuvem.com.br/produtos/vizz-manhattan-preto/" target="_blank"><img src="images/destaque/SOL/Manhattan/01.png" alt="Image 2"></a>
+                    <h1>Óculos de Sol com proteção <span>UV400</span> Vizz Manhattan</h1>
+                    <p class="preco__antigo">R$ 129,99</p>
+                    <p class="preco__promo">R$ 99,99</p>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="https://oticasvizz.lojavirtualnuvem.com.br/produtos/vizz-rio-preto/" target="_blank"><img src="images/destaque/SOL/Rio/01.jpg" alt="Image 2"></a>
+                    <h1>Óculos de Sol com proteção <span>UV400</span> Vizz Rio</h1>
+                    <p class="preco__antigo">R$ 129,99</p>
+                    <p class="preco__promo">R$ 99,99</p>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="https://oticasvizz.lojavirtualnuvem.com.br/produtos/vizz-monroe-gatinho-preto/" target="_blank"><img src="images/destaque/SOL/Monroe Gatinho/01.png" alt="Image 2"></a>
+                    <h1>Óculos de Sol com proteção <span>UV400</span> Vizz Monroe Gatinho</h1>
+                    <p class="preco__antigo">R$ 129,99</p>
+                    <p class="preco__promo">R$ 99,99</p>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="https://oticasvizz.lojavirtualnuvem.com.br/produtos/vizz-gamma-preto/" target="_blank"><img src="images/destaque/SOL/Gamma/01.png" alt="Image 2"></a>
+                    <h1>Óculos de Sol com proteção <span>UV400</span> Vizz Gamma</h1>
+                    <p class="preco__antigo">R$ 129,99</p>
+                    <p class="preco__promo">R$ 99,99</p>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="https://oticasvizz.lojavirtualnuvem.com.br/produtos/vizz-beta-preto/" target="_blank"><img src="images/destaque/SOL/Beta/01.png" alt="Image 2"></a>
+                    <h1>Óculos de Sol com proteção <span>UV400</span> Vizz Beta</h1>
+                    <p class="preco__antigo">R$ 129,99</p>
+                    <p class="preco__promo">R$ 99,99</p>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="https://oticasvizz.lojavirtualnuvem.com.br/produtos/vizz-boldsquare-branco/" target="_blank"><img src="images/destaque/SOL/BoldSquare/01.png" alt="Image 2"></a>
+                    <h1>Óculos de Sol com proteção <span>UV400</span> Vizz BoldSquare</h1>
+                    <p class="preco__antigo">R$ 129,99</p>
+                    <p class="preco__promo">R$ 99,99</p>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="https://oticasvizz.lojavirtualnuvem.com.br/produtos/vizz-gamma-animal-print/" target="_blank"><img src="images/destaque/SOL/Gamma/01.png" alt="Image 2"></a>
+                    <h1>Óculos de Sol com proteção <span>UV400</span> Vizz Gamma</h1>
+                    <p class="preco__antigo">R$ 129,99</p>
+                    <p class="preco__promo">R$ 99,99</p>
+                  </div>
+                </div>
+            </article>
+            <article class="carousel-section">
+                <button class="carousel-button left" onclick="scrollCarousel(2, -300)">&#10094;</button>
+                <button class="carousel-button right" onclick="scrollCarousel(2, 300)">&#10095;</button>
+                <div class="carousel-container" id="carousel2">
+                  <div class="carousel-item">
+                    <a href=""><img src="images/destaque/GRAU/ACTIVE/active01.jpg" alt="Image 1"></a>
+                    <h1>Armação para Grau Vizz Active</h1>
+                    <p class="preco__antigo">R$ 129,99</p>
+                    <p class="preco__promo">R$ 99,99</p>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="https://oticasvizz.lojavirtualnuvem.com.br/produtos/armacao-para-lentes-de-grau-vizz-regency-preto/" target="_blank"><img src="images/destaque/GRAU/REGENCY2/01.png" alt="Image 2"></a>
+                    <h1>Armação para Grau Vizz Regency</h1>
+                    <p class="preco__antigo">R$ 129,99</p>
+                    <p class="preco__promo">R$ 99,99</p>
+                  </div>
+                  <div class="carousel-item">
+                    <a href=""><img src="images/destaque/GRAU/SFERA/01.png" alt="Image 2"></a>
+                    <h1>Armação para Grau Vizz Sfera</h1>
+                    <p class="preco__antigo">R$ 129,99</p>
+                    <p class="preco__promo">R$ 99,99</p>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="https://oticasvizz.lojavirtualnuvem.com.br/produtos/armacao-para-lentes-de-grau-vizz-mikonos-bege/" target="_blank"><img src="images/destaque/GRAU/MIKONOS/01.png" alt="Image 2"></a>
+                    <h1>Armação para Grau Vizz Mikonos</h1>
+                    <p class="preco__antigo">R$ 129,99</p>
+                    <p class="preco__promo">R$ 99,99</p>
+                  </div>
+                  <div class="carousel-item">
+                    <a href=""><img src="images/destaque/GRAU/GLACIER/glacier01.jpg" alt="Image 2"></a>
+                    <h1>Armação para Grau Vizz Glacier</h1>
+                    <p class="preco__antigo">R$ 129,99</p>
+                    <p class="preco__promo">R$ 99,99</p>
+                  </div>
+                  <div class="carousel-item">
+                    <a href=""><img src="images/destaque/GRAU/SPENGLER/1p.png" alt="Image 2"></a>
+                    <h1>Armação para Grau Vizz Spengler</h1>
+                    <p class="preco__antigo">R$ 129,99</p>
+                    <p class="preco__promo">R$ 99,99</p>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="https://oticasvizz.lojavirtualnuvem.com.br/produtos/armacao-para-lentes-de-grau-vizz-parker-dourado/" target="_blank"><img src="images/destaque/GRAU/PARKER/01.png" alt="Image 2"></a>
+                    <h1>Armação para Grau Vizz Parker</h1>
+                    <p class="preco__antigo">R$ 129,99</p>
+                    <p class="preco__promo">R$ 99,99</p>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="https://oticasvizz.lojavirtualnuvem.com.br/produtos/armacao-para-lentes-de-grau-vizz-aspen/" target="_blank"><img src="images/destaque/GRAU/ASPEN/01.png" alt="Image 2"></a>
+                    <h1>Armação para Grau Vizz Aspen</h1>
+                    <p class="preco__antigo">R$ 129,99</p>
+                    <p class="preco__promo">R$ 99,99</p>
+                  </div>
+                  <div class="carousel-item">
+                    <a href=""><img src="images/destaque/GRAU/ROONEY/1p.png" alt="Image 2"></a>
+                    <h1>Armação para Grau Vizz Viena</h1>
+                    <p class="preco__antigo">R$ 129,99</p>
+                    <p class="preco__promo">R$ 99,99</p>
+                  </div>
+                  <div class="carousel-item">
+                    <a href=""><img src="images/destaque/GRAU/ETHEREAL/ethereal01.jpg" alt="Image 2"></a>
+                    <h1>Armação para Grau Vizz Ethereal</h1>
+                    <p class="preco__antigo">R$ 129,99</p>
+                    <p class="preco__promo">R$ 99,99</p>
+                  </div>
+                </div>
+            </article>
+        </section>
+        <section id="design" class="main__designe" id="designe">
+            <h1 class="designe__title">Design</h1>
+            <article class="designe__infos">
+                <div class="designe__item">
+                    <img src="images/designe/01redondo.png" alt="imagem de um rosto com óculos redondo" class="designe__image">
+                    <ul class="designe__list">
+                        <h1 class="designe__list-title">Arredondado</h1>
+                        <li class="designe__list-item"><span class="designe__list-item--label">Características:</span> Armações com bordas curvas, sem ângulos definidos.</li>
+                        <li class="designe__list-item"><span class="designe__list-item--label">Rostos Quadrados:</span> O formato arredondado suaviza os traços angulosos, trazendo um equilíbrio visual.</li>
+                        <li class="designe__list-item"><span class="designe__list-item--label">Rostos Retangulares:</span> Adiciona uma sensação de largura, suavizando a aparência alongada.</li>
+                    </ul>
+                </div>
+                <div class="designe__item">
+                    <img src="images/designe/02quadrado.png" alt="imagem de um rosto com óculos quadrado" class="designe__image">
+                    <ul class="designe__list">
+                        <h1 class="designe__list-title">Quadrado</h1>
+                        <li class="designe__list-item"><span class="designe__list-item--label">Características:</span> Armações angulares com linhas retas e ângulos definidos.</li>
+                        <li class="designe__list-item"><span class="designe__list-item--label">Rostos Redondos:</span> O contraste das linhas retas e ângulos marcados ajuda a criar uma ilusão de maior definição, equilibrando as curvas naturais do rosto.</li>
+                        <li class="designe__list-item"><span class="designe__list-item--label">Rostos Ovais:</span> Funcionam bem, pois o rosto oval é versátil e harmoniza com quase todos os estilos.</li>
+                    </ul>
+                </div>
+                <div class="designe__item">
+                    <img src="images/designe/03gatinho.png" alt="imagem de um rosto com óculos gatinho" class="designe__image">
+                    <ul class="designe__list">
+                        <h1 class="designe__list-title">Gatinho</h1>
+                        <li class="designe__list-item"><span class="designe__list-item--label">Rostos Redondos:</span> O formato em “V” invertido alonga o rosto e cria um efeito de definição.</li>
+                        <li class="designe__list-item"><span class="designe__list-item--label">Rostos Ovais:</span> Realçam a simetria e a harmonia do rosto.</li>
+                        <li class="designe__list-item"><span class="designe__list-item--label">Rostos em Formato de Coração:</span> Equilibram o queixo estreito e destacam as maçãs do rosto.</li>
+                    </ul>
+                </div>
+            </article>
+            <p class="designe__cta">Escolha o modelo que mais combina com você!</p>
+            <div class="designe__image-container">
+                <div class="designe__image-item">
+                    <a href="https://oticasvizz.lojavirtualnuvem.com.br/oculos-de-sol/arredondados/" target="_blank">
+                        <img src="images/designe/designe1.png" alt="imagem óculos redondo" class="designe__image-item--img">
+                    </a>
+                    <p class="designe__image-item--text">Redondos</p>
+                </div>
+                <div class="designe__image-item">
+                    <a href="https://oticasvizz.lojavirtualnuvem.com.br/oculos-de-sol/quadrados/" target="_blank">
+                        <img src="images/designe/designe2.png" alt="imagem óculos quadrado" class="designe__image-item--img">
+                    </a>
+                    <p class="designe__image-item--text">Quadrados</p>
+                </div>
+                <div class="designe__image-item">
+                    <a href="https://oticasvizz.lojavirtualnuvem.com.br/oculos-de-sol/gatinho/" target="_blank">
+                        <img src="images/designe/designe3.png" alt="imagem óculos em formato gatinho" class="designe__image-item--img">
+                    </a>
+                    <p class="designe__image-item--text">Gatinho</p>
+                </div>
+            </div>
+        </section>
+        <section id="orcamento" class="orcamento">
+          <h1>Orçamento Online</h1>
+          <p>Envie uma foto legível de sua receita e receba um orçamento <span class="span__orcamento">em até 24 horas</span>.</p>
+          <div class="form__receita--container">
+            <div class="form__container">
+              <form>
+                <label for="name">Nome Completo:</label>
+                <input type="text" id="name" class="input__data" placeholder="Seu nome completo" required />
+            
+                <label for="whatsapp">WhatsApp:</label>
+                <input
+                  type="tel"
+                  id="whatsapp"
+                  class="input__data"
+                  placeholder="(DDD) 99999-9999"
+                  pattern="\(\d{2}\) \d{5}-\d{4}"
+                  required
+                  title="Formato esperado: (DDD) 99999-9999"
+                />
+            </div>
+            <div class="receita__container">
+              <img id="preview" alt="Pré-visualização da imagem" style="max-width: 200px; max-height: 200px;" />
+              <label for="file">Imagem da Receita:</label>
+              <input type="file" id="file" accept="image/*" required />
+            </div>
+          </div>
+            <button type="button" id="uploadButton">Enviar</button>
+            <p id="status"></p>
+          </form>
+          <p id="status"></p>          
+        </section>
+        <section id="quem__somos" class="quem__somos">
+          <div class="quem__somos--container">
+            <h1>Quem Somos</h1>
+            <p>A <span class="span__quem--somos">Ótica Vizz</span> nasceu em agosto de 2024, fruto da união de três amigos com um propósito comum: <span class="span__quem--somos">transformar a forma como as pessoas cuidam da sua saúde visual, sem abrir mão do estilo.</span> Nossa missão é...</p>
+              <button class="btn__ver--mais">ver mais</button>
+              <div class="texto__oculto">
+                <p>proporcionar uma experiência única, oferecendo armações e lentes de altíssima qualidade, sempre com um toque moderno e inovador.</p>  
+                <p>Nosso compromisso vai além da qualidade. Sabemos que, <span class="span__quem--somos">em tempos de escolhas conscientes, o preço também é um fator essencial.</span> Por isso, na Ótica Vizz, garantimos <span class="span__quem--somos">o melhor preço da região</span>, sem comprometer a excelência dos nossos produtos e serviços. Acreditamos que cuidar da sua visão e do seu estilo deve ser acessível a todos, e por isso trabalhamos para oferecer opções de qualidade a preços que cabem no seu bolso.</p>
+                <p>Com um olhar atento para as tendências e as necessidades de nossos clientes, buscamos sempre <span class="span__quem--somos">a melhor solução para o seu bem-estar visual.</span> Na Ótica Vizz, qualidade, estilo e economia caminham juntos para que você se sinta bem ao enxergar o mundo.</p>
+                <button class="btn__ver--menos">ver menos</button>
+              </div>
+          </div>
+          <iframe 
+            width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/41TFu_6eOzw?si=tMDHEo370jWYm_uv" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen>
+          </iframe>
+        </section>
+        <section id="horario__endereco" class="horario__endereco">
+          <div class="endereco__container">
+              <h1>Venha nos visitar!</h1>
+              <p>Avenida do Oratório, 4869, Vila Industrial <br> São Paulo - Sp</p>
+          </div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d116993.37814058634!2d-46.6101910862598!3d-23.6027883597688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x94ce5d0dedc7ec5d%3A0xb59f5577f9728b75!2sAv.%20do%20Orat%C3%B3rio%2C%204869%20-%20Jardim%20Guairaca%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003221-200!3m2!1d-23.6028101!2d-46.5277895!5e0!3m2!1spt-BR!2sbr!4v1733151926301!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="hidden"></iframe>
+          <div class="horario__container">
+            <h1>Horário de funcionamento:</h1>
+            <p>Segunda à Sexta <span class="span__horario">10:00 às 19:00</span></p>
+            <p>Sábados <span class="span__horario">10:00 às 17:00</span></p>
+            <p>Domingos <span class="span__horario">FECHADO</span></p>
+        </div>
+      </section>
+        <section id="contact" class="contact">
+          <iframe 
+          class="iframe__formulario" 
+          src="https://docs.google.com/forms/d/e/1FAIpQLSfhZWqnS9cmLh54yvj4fV7U3yx9amXv20G2RywFe1nQSg9esQ/viewform?embedded=true" 
+          width="640" 
+          height="1080" 
+          frameborder="0" 
+          marginheight="0" 
+          marginwidth="0">Loading…
+        </iframe>      
+        </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-container">
+        
+        <!-- Sobre a Ótica -->
+        <div class="footer-section">
+          <h3>Sobre as Óticas Vizz</h3>
+          <p>
+            A Vizz Ótica oferece as melhores opções de óculos de grau e solares com estilo e qualidade. Nosso objetivo é cuidar da sua visão com produtos exclusivos e atendimento personalizado.
+          </p>
+        </div>
+    
+        <!-- Contato -->
+        <div class="footer-section">
+          <h3>Contato</h3>
+          <ul>
+            <li><a href="https://www.google.com/maps/dir/-23.5995136,-46.5272832/%C3%B3ticas+vizz+mapa/@-23.6013502,-46.5297198,17z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x94ce5d0dedc7ec5d:0xb59f5577f9728b75!2m2!1d-46.5277895!2d-23.6028101?entry=ttu&g_ep=EgoyMDI1MDEwOC4wIKXMDSoASAFQAw%3D%3D" target="_blank">Avenida do Oratório, 4869, Jardim Guaiaçara - SP</a></li>
+            <li><a href="https://wa.me/551123628799">(11) 2362-8799</a></li>
+            <li><a href="mailto:oticasvizz@gmail.com">oticasvizz@gmail.com</a></li>
+            <li>Seg a Sex: 10h às 19h | Sáb: 10:00h às 17:00h</li>
+            <li>Domingos: Fechado</li>
+          </ul>
+        </div>
+    
+        <!-- Links Úteis -->
+        <div class="footer-section">
+          <h3>Links Úteis</h3>
+          <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="https://oticasvizz.lojavirtualnuvem.com.br/produt" target="_blank">Produtos</a></li>
+            <li><a href="#quem__somos">Sobre Nós</a></li>
+            <li><a href="#contact">Fale Conosco</a></li>
+          </ul>
+        </div>
+    
+        <!-- Redes Sociais -->
+        <div class="footer-section">
+          <h3>Siga-nos</h3>
+          <div class="social-links">
+            <a href="https://facebook.com/vizzotica" target="_blank"><img src="images/icones/face-cinza.png" alt="">Facebook</a>
+            <a href="https://instagram.com/vizzotica" target="_blank"><img src="images/icones/insta-cinza.png" alt="">Instagram</a>
+            <a href="https://wa.me/5511999999999" target="_blank"><img src="images/icones/whats-cinza.png" alt="">WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Direitos Autorais -->
+      <div class="footer-bottom">
+        <p>
+          © 2025 Óticas Vizz. Todos os direitos reservados. Desenvolvido por 
+          <a href="https://github.com/WilkerGw" target="_blank">Wilker Martins</a>.
+        </p>
+      </div>
+    </footer>        
+</body>
+</html>
