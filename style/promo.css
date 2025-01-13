@@ -13,7 +13,7 @@
 }
 
 .promo__container p {
-    margin-block: 1rem;
+    margin-block: .5rem;
 }
 
 .promo {
@@ -40,6 +40,10 @@
 
 @media (min-width: 600px) {
 
+.promo__container {
+    height: 100vh;
+}
+
 .promo__img--container{
     display: flex;
     align-items: center;
@@ -53,17 +57,24 @@
     justify-content: center;
     align-items: center;
     width: 40%;
-    border-radius: 1rem;
+    border-radius: .3rem;
     box-shadow: 0px 0px 10px #9e9e9e;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.promo button {
+    left: 230px;
+    top: 175px;
 }
 
 .promo img {
     width: 100%;
 }
-    
-.promo button {
-    left: 230px;
-    top: 175px;
+   
+.promo:hover {
+    transform: scale(1.1);
 }
+
 
 }
